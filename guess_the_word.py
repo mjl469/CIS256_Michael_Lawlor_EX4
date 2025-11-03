@@ -12,7 +12,7 @@ for letter in choice:
 print('Guess the word one letter at a time!')
 
 # Writing game logic
-while guess != choice:
+while guess != choice and attempts > 0:
 
     print(f'Remaining attempts: {attempts}')
     print(f'{guess}\n')
@@ -38,5 +38,9 @@ while guess != choice:
     else:
         print('Please enter one letter guesses only.\n')
 
-
+# Writing win/loss message
+if attempts == 0:
+    print('No more attempts. Try again.')
+if guess == choice:
+    print('Congratulations! You Win!')
 
