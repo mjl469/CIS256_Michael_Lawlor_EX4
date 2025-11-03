@@ -1,8 +1,8 @@
 import random
 
 #Creating necessary initial variables
-list = ['quality', 'dull', 'cherry', 'symbol', 'angel', 'evening', 'authorise', 'chemistry', 'marriage', 'disturbance']
-choice = random.choice(list)
+word_list = ['quality', 'dull', 'cherry', 'symbol', 'angel', 'evening', 'authorise', 'chemistry', 'marriage', 'disturbance']
+choice = random.choice(word_list)
 guess = ''
 attempts = 5
 
@@ -43,4 +43,3 @@ if attempts == 0:
     print('No more attempts. Try again.')
 if guess == choice:
     print('Congratulations! You Win!')
-
